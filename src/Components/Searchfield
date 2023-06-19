@@ -19,7 +19,20 @@ const Searchfield = ({ onSearch }) => {
   
     return (
       //html for the search field
-      
+      <div>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={input}
+          placeholder="What do you want to find GIFs of?"
+          onChange={handleChange}
+          className="search"
+        />
+        <button type="submit" className="btn">
+          Search
+        </button>
+      </form>
+    </div>
     );
   };
 

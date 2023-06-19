@@ -18,7 +18,7 @@ function App() {
     //fetch gifs from GIPHY
     //Trending Search: http://api.giphy.com/v1/gifs/trending?api_key=YOUR_API_KEY
   }, []);
-  //square brackets on line 16 specify condition that will make useEffect run
+  //square brackets on line 20 specify condition that will make useEffect run
   //here they are empty b/c loadTrending will load trending gifs once when the component is first loads
 
   const loadTrending = () => {};
@@ -28,6 +28,8 @@ function App() {
       <header className="App-header"></header>
       //HTML of the app
       <h1 className="nav">Diana Hung's GIPHY API App</h1>
+      <searchfield/>
+      <gifcard />
     </div>
   );
 }
