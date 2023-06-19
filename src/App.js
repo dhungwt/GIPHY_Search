@@ -30,15 +30,16 @@ function App() {
     );
     setGifs(result.data.data); //gifs are returned by GIPHY as an array of gifs in the JSON
     setLoading(false); //set back to false after trending gifs load
-  };
 }catch{
- console.error(("An error occured while loading treanding gifs:", error);
+ console.error("An error occured while loading treanding gifs:", error);
  setLoading(false); //set back to false after error encountered
 }
+};
 
+//fetches gifs based on input
 async function fetchGifs(){
   setLoaded(true);
-  const result = await axios.get(`https://zip-api.eu/api/v1/info/US-${input}`) 
+  const result = await axios.get(`http://api.giphy.com/v1/gifs/search?q={$input}&api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`) 
   console.log(result)
   setGifs(result.data.data); 
   setLoading(false);
@@ -47,7 +48,7 @@ async function fetchGifs(){
   return (
     <div className="App">
       <header className="App-header"></header>
-      //HTML of the app
+      {/*HTML of the app*/}
       <h1 className="nav">Diana Hung's GIPHY API App</h1>
       <searchfield/>
       {/*following will display trending when first loaded and results if an input is submitted*/}
