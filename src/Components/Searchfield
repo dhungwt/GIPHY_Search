@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 //the search bar and its submit button
 
-const Searchfield = ({ onSearch }) => {
-    const [input, setInput] = useState(""); //state that stores user's input in search
-    //default is an empty string
-  
+const Searchfield = ({ setInput,fetchGifs}) => {
+   
     const handleChange = (event) => {
       //handles text entered in form
       setInput(event.target.value);
@@ -14,7 +12,12 @@ const Searchfield = ({ onSearch }) => {
     const handleSubmit = (event) => {
       //handles submit button click
       event.preventDefault(); //prevents results from loading before user enters terms and hits the form submit button
-      onSearch(input);
+      try{
+        (input);
+      }catch (error){
+
+      }
+      
     };
   
     return (
@@ -25,10 +28,10 @@ const Searchfield = ({ onSearch }) => {
           type="text"
           value={input}
           placeholder="What do you want to find GIFs of?"
-          onChange={handleChange}
+          onChange={handleChange} //after form is edited, search term is passed to handleChange to save input
           className="search"
         />
-        <button type="submit" className="btn">
+        <button type="submit" className="btn" onClick={fetchGifs}>
           Search
         </button>
       </form>
