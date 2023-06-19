@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-
+import './App.css';
+//the search bar and its submit button
 
 const Searchfield = ({ onSearch }) => {
     const [input, setInput] = useState(""); //state that stores user's input in search
@@ -18,20 +19,7 @@ const Searchfield = ({ onSearch }) => {
   
     return (
       //html for the search field
-      <div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            value={input}
-            placeholder="What do you want to find GIFs of?"
-            onChange={handleChange}
-            className="search"
-          />
-          <button type="submit" className="btn">
-            Search
-          </button>
-        </form>
-      </div>
+      
     );
   };
 
