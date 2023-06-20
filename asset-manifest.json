@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dhungwt/GIPHY_Search/static/css/main.2210131b.css",
-    "main.js": "/dhungwt/GIPHY_Search/static/js/main.8a2746fb.js",
-    "static/js/787.e9ca501d.chunk.js": "/dhungwt/GIPHY_Search/static/js/787.e9ca501d.chunk.js",
-    "index.html": "/dhungwt/GIPHY_Search/index.html",
-    "main.2210131b.css.map": "/dhungwt/GIPHY_Search/static/css/main.2210131b.css.map",
-    "main.8a2746fb.js.map": "/dhungwt/GIPHY_Search/static/js/main.8a2746fb.js.map",
-    "787.e9ca501d.chunk.js.map": "/dhungwt/GIPHY_Search/static/js/787.e9ca501d.chunk.js.map"
+    "main.css": "/GIPHY_Search/static/css/main.2210131b.css",
+    "main.js": "/GIPHY_Search/static/js/main.c9e25c49.js",
+    "static/js/787.e9ca501d.chunk.js": "/GIPHY_Search/static/js/787.e9ca501d.chunk.js",
+    "index.html": "/GIPHY_Search/index.html",
+    "main.2210131b.css.map": "/GIPHY_Search/static/css/main.2210131b.css.map",
+    "main.c9e25c49.js.map": "/GIPHY_Search/static/js/main.c9e25c49.js.map",
+    "787.e9ca501d.chunk.js.map": "/GIPHY_Search/static/js/787.e9ca501d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2210131b.css",
-    "static/js/main.8a2746fb.js"
+    "static/js/main.c9e25c49.js"
   ]
 }
