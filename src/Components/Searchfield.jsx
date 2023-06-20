@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Filter from "./Filter";
 //the search bar and its submit button
 
-const Searchfield = ({ fetchGifs, fetchInput}) => {
+const Searchfield = ({ fetchGifs, fetchInput, returnRandom}) => {
   const [input, setInput] = useState(""); //state that stores user's input in search
   const [stickersOnly, setStickersOnly] = useState(false);
     const handleChange = (event) => {
@@ -44,9 +44,9 @@ const Searchfield = ({ fetchGifs, fetchInput}) => {
         <button type="submit" className="btn">
           Submit
         </button>
-        {/* <button type="button" className="btn" onClick={returnRandom}>
+        <button type="button" className="btn" onClick={returnRandom}>
           Random
-        </button> */}
+        </button>
       </form>
     </div>
     );

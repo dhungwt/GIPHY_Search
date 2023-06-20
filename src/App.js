@@ -3,14 +3,13 @@ import { useEffect, useState } from "react";
 import Searchfield from "./Components/Searchfield";
 import axios from "axios";
 import Gifcard from "./Components/Gifcard"
-import Filter from "./Components/Filter"
+
 
 function App() {
   const [input, setInput] = useState("");
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false); //tracks whether or not state loaded correctly
   const [gifs, setGifs] = useState([]); // state that stores current batch of gifs to be displayed
  
-  //default is an empty string
 
   //useEffect that loads trending gifs once the page loads
   useEffect(() => {
@@ -46,6 +45,7 @@ function fetchInput(searchInput, ){
     if(filterOptions.stickersOnly){
      result = await axios.get(
       `http://api.giphy.com/v1/stickers/search?q=${searchInput}&api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
+      //`http://api.giphy.com/v1/${filteroptions.stickersonly?stickers:gifs}/search?q=${searchInput}&api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
     );
   }else{
      result = await axios.get(
@@ -55,6 +55,18 @@ function fetchInput(searchInput, ){
     console.log(result);
     setGifs(result.data.data);
   
+}
+
+//returnRandom returns one random gif
+async function returnRandom() {
+   try {
+    const result = await axios.get(
+      `http://api.giphy.com/v1/gifs/random?api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
+    );
+    setGifs([result.data.data]);
+  } catch (error) {
+    console.error("An error occurred while loading random gif:", error);
+  }
 }
 
   return (

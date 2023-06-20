@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function Filter (props){
- 
+ //component unused, no longer implemented but this is stored for reference
     //TO ADD append additional search terms from searchfield to return filtered content 
 //if no sticker filter, filter on array
 
