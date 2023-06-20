@@ -22,7 +22,7 @@ function App() {
     try {
       //try catch for retreival of trending gifs
       const result = await axios.get(
-        `http://api.giphy.com/v1/gifs/trending?api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
+        `https://api.giphy.com/v1/gifs/trending?api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
       );
       setGifs(result.data.data); //gifs are returned by GIPHY as an array of gifs in the JSON
       console.log(result);
@@ -42,12 +42,12 @@ function App() {
     let result = [];
     if (filterOptions.stickersOnly) {
       result = await axios.get(
-        `http://api.giphy.com/v1/stickers/search?q=${searchInput}&api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
+        `https://api.giphy.com/v1/stickers/search?q=${searchInput}&api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
         //`http://api.giphy.com/v1/${filteroptions.stickersonly?stickers:gifs}/search?q=${searchInput}&api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
       );
     } else {
       result = await axios.get(
-        `http://api.giphy.com/v1/gifs/search?q=${searchInput}&api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
+        `https://api.giphy.com/v1/gifs/search?q=${searchInput}&api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
       );
     }
     console.log(result);
@@ -58,7 +58,7 @@ function App() {
   async function returnRandom() {
     try {
       const result = await axios.get(
-        `http://api.giphy.com/v1/gifs/random?api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
+        `https://api.giphy.com/v1/gifs/random?api_key=ptLg3iWyFUnQLRh4KmRvlxEBtdswbnMM`
       );
       console.log("RANDOM");
       setGifs([result.data.data]);
