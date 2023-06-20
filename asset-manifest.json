@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/GIPHY_Search/static/css/main.2210131b.css",
-    "main.js": "/GIPHY_Search/static/js/main.c9e25c49.js",
+    "main.js": "/GIPHY_Search/static/js/main.0e8c93cd.js",
     "static/js/787.e9ca501d.chunk.js": "/GIPHY_Search/static/js/787.e9ca501d.chunk.js",
     "index.html": "/GIPHY_Search/index.html",
     "main.2210131b.css.map": "/GIPHY_Search/static/css/main.2210131b.css.map",
-    "main.c9e25c49.js.map": "/GIPHY_Search/static/js/main.c9e25c49.js.map",
+    "main.0e8c93cd.js.map": "/GIPHY_Search/static/js/main.0e8c93cd.js.map",
     "787.e9ca501d.chunk.js.map": "/GIPHY_Search/static/js/787.e9ca501d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2210131b.css",
-    "static/js/main.c9e25c49.js"
+    "static/js/main.0e8c93cd.js"
   ]
 }
