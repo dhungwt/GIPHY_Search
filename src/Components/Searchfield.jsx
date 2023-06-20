@@ -44,9 +44,7 @@ const Searchfield = ({ fetchGifs, fetchInput, returnRandom}) => {
         <button type="submit" className="btn">
           Submit
         </button>
-        <button type="button" className="btn" onClick={returnRandom}>
-          Random
-        </button>
+
       </form>
     </div>
     );
