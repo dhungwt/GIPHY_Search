@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(200, 198, 195);
 }
 .nav{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -59,6 +60,27 @@
   transform: translateY(2px);
 }
 
+.search{
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 50%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.gif-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Adjust the alignment as needed */
+  gap: 10px; /* Adjust the gap between GIFs as needed */
 }
